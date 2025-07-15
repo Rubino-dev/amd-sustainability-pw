@@ -1,1 +1,3 @@
-# amd-sustainability-pw
+## Project Work – Pagina Web Sostenibilità AMD
+
+Questo progetto consiste nella realizzazione di una pagina web responsive e accessibile dedicata alla sostenibilità aziendale di AMD (Advanced Micro Devices). La piattaforma è stata sviluppata interamente in HTML, CSS e JavaScript, con l'integrazione di librerie moderne come Bootstrap, ApexCharts e Glider.js per la visualizzazione dei dati ESG, l'interattività e la gestione del layout. Il sito permette la consultazione dei report ufficiali AMD, evidenzia gli obiettivi ambientali raggiunti e offre un'interfaccia moderna ispirata alla brand identity del gruppo.
