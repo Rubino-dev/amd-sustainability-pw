@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+
+  <!-- Charset e viewport -->
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Accessibilità per supporto lettori -->
+  <meta name="language" content="it" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+
+  <!-- Meta per la SEO -->
+  <title>AMD | Report di Sostenibilità e Innovazione Responsabile</title>
+  <meta name="description"
+    content="Scopri come AMD promuove l'efficienza energetica, l'inclusione e la sostenibilità globale attraverso il suo impegno ambientale e sociale." />
+  <meta name="keywords"
+    content="AMD, sostenibilità, report, energia, inclusione, innovazione, ambiente, governance, responsabilità sociale, ESG" />
+  <meta name="author" content="Antonio" />
+  <meta name="robots" content="index, follow" />
+
+  <!-- Favicon & Browser theming -->
+  <link rel="icon" href="./content/images/favicon/favicon.ico" />
+  <meta name="theme-color" content="#007c97" />
+
+
+  <!-- Open Graph -->
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="AMD | Sostenibilità e Innovazione Responsabile" />
+  <meta property="og:description" content="Una panoramica delle iniziative AMD per un futuro più sostenibile ed efficiente." />
+  <meta property="og:site_name" content="AMD Sostenibilità" />
+
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="AMD | Sostenibilità e Innovazione Responsabile" />
+  <meta name="twitter:description" content="Scopri le azioni concrete di AMD per il clima, l'efficienza energetica e l'impatto sociale." />
+  <meta name="twitter:site" content="@AMD" />
+
+  <!-- Link al nostro foglio di stile custom -->
+  <link rel="stylesheet" href="./content/css/style.css">
+
+
+  <!-- Importazione librerie esterne -->
+  <!-- Google Font, font family utilizzato da AMD -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet" />
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <!-- Stile della libreria utilizzata per lo slider -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.css">
+
+  <!-- fontawesome icone -->
+  <link rel="stylesheet" href="./content/css/all.min.css">
+
+</head>
+
+<body>
+
+    <!-- Inizio sezione Hero Video -->
+    <section class="hero">
+      <video autoplay muted loop playsinline id="heroVideo" class="hero-video">
+        <source src="./content/video/AMD-celebrates-28-Years-of-Corporate-Responsibility-Reporting.mp4" type="video/mp4">
+        Il tuo browser non supporta il tag video.
+      </video>
+      <div class="hero-content">
+        <div class="hero-logo">
+          <img src="./content/images/amd-hero-logo.svg" alt="Logo AMD">
+        </div>
+        <div class="hero-controls">
+          <div class="pause-control">
+            <span id="pause-text">Metti in pausa</span>
+            <div class="pause-button">
+              <button onclick="toggleVideo()">
+                <i class="fa-solid fa-pause"></i>
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Fine sezione Hero Video -->
+
+  <header>
+  <!-- Inizio Menu navigazione Desktop -->
+  <nav id="mainNav">
+    <a href="#approach">Approccio</a>
+    <a href="#areas">Aree di interesse</a>
+    <a href="#goals">Obiettivi</a>
+    <a href="#progress">Progressi</a>
+    <a href="#reporting">Reporting</a>
+    <a href="#recognition">Riconoscimenti</a>
+  </nav>
+  <!-- Fine Menu navigazione Desktop -->
+  </header>
+
+  <!-- Header con menu mobile -->
+<header class="site-header">
+  <nav class="navbar">
+    <div class="logo">   <img src="./content/images/amd-hero-logo.svg" alt="Logo AMD"></div>
+    <button class="hamburger" id="hamburger-btn" aria-label="Apri menu">
+      <span></span>
+      <span></span>
+      <span></span>
+    </button>
+    <ul class="nav-links" id="mobile-menu">
+    <a href="#approach">Approccio</a>
+    <a href="#areas">Aree di interesse</a>
+    <a href="#goals">Obiettivi</a>
+    <a href="#progress">Progressi</a>
+    <a href="#reporting">Reporting</a>
+    <a href="#recognition">Riconoscimenti</a>
+    </ul>
+  </nav>
+</header>
+  <!-- Fine con menu mobile -->
+
+
+  <!-- Inizio sezione approccio -->
+  <section class="py-5" id="approach">
+    <div class="container">
+      <div class="row align-items-center overflow-hidden rounded-4 shadow-lg approccio-blocco">
+        <div class="col-md-6 bg-black text-white p-5 content-box">
+          <div class="content-approach">
+            <h2 class="mb-4 text-start">Un impegno condiviso per la sostenibilità</h2>
+            <p>In AMD, adottiamo un approccio alla sostenibilità che abbraccia l’intero ciclo di vita dei nostri
+              prodotti. Collaboriamo con partner e comunità per ridurre l’impatto ambientale e promuovere l’innovazione
+              responsabile. Il nostro obiettivo è favorire una trasformazione verso un’economia a basse emissioni di
+              carbonio, creando tecnologie ad alte prestazioni e sempre più sostenibili.</p>
+          </div>
+        </div>
+        <div class="col-md-6 p-0 approccio-img"></div>
+      </div>
+    </div>
+  </section>
+  <!-- Fine sezione approccio -->
+
+  <!-- Inizio sezione Aree di Interesse con Tabs -->
+  <section class="py-5 bg-black text-white mb-5 mt-5" id="areas">
+    <div class="container text-center">
+      <h2 class="mb-5">Aree di Interesse</h2>
+      <!-- Nav Tabs -->
+      <ul class="nav nav-tabs border-0 mb-5" id="interestTabs" role="tablist">
+        <li class="nav-item" role="presentation">
+          <button class="nav-link active text-white" id="clima-tab" data-bs-toggle="tab" data-bs-target="#clima"
+            type="button" role="tab">Clima</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-white" id="energia-tab" data-bs-toggle="tab" data-bs-target="#energia"
+            type="button" role="tab">Energia</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-white" id="acqua-tab" data-bs-toggle="tab" data-bs-target="#acqua" type="button"
+            role="tab">Acqua</button>
+        </li>
+        <li class="nav-item" role="presentation">
+          <button class="nav-link text-white" id="rifiuti-tab" data-bs-toggle="tab" data-bs-target="#rifiuti"
+            type="button" role="tab">Rifiuti</button>
+        </li>
+      </ul>
+
+      <!-- Contenuto tabs -->
+      <div class="tab-content text-start" id="interestTabsContent">
+        <div class="tab-pane fade show active" id="clima" role="tabpanel">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h3>Impegno verso il Clima</h3>
+              <p>AMD si impegna a raggiungere emissioni nette zero entro il 2040 nelle proprie operazioni globali,
+                migliorando l'efficienza energetica e collaborando con clienti e partner per ridurre le emissioni di gas
+                serra.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="./content/images/areas/area-climate.jpg" class="img-fluid rounded area-img"
+                alt="Immagine che raffigura delle fabbriche che emettono co2 nell'area">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="energia" role="tabpanel">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h3>Efficienza Energetica</h3>
+              <p>Attraverso il design dei chip ad alta efficienza, AMD ha evitato oltre 132.000 tonnellate di CO₂e nel
+                2023. L'azienda mira a migliorare l'efficienza dei chip HPC/AI di 30 volte entro il 2025.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="./content/images/areas/area-energy.jpg" class="img-fluid rounded area-img"
+                alt="Immagine in cui sono presenti pale eoliche in un campo">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="acqua" role="tabpanel">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h3>Gestione delle Risorse Idriche</h3>
+              <p>AMD implementa strategie per ridurre l'uso di acqua nelle proprie operazioni e incoraggia pratiche
+                sostenibili lungo la catena di fornitura globale.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="./content/images/areas/area-water.jpg" class="img-fluid rounded area-img"
+                alt="Immagine in cui è presente un ghiacciaio in fase di scioglimento">
+            </div>
+          </div>
+        </div>
+        <div class="tab-pane fade" id="rifiuti" role="tabpanel">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h3>Gestione dei Rifiuti</h3>
+              <p>Promuoviamo pratiche di riciclo e riuso e lavoriamo per ridurre i rifiuti in tutte le fasi del ciclo di
+                vita del prodotto e nelle strutture aziendali.</p>
+            </div>
+            <div class="col-md-6">
+              <img src="./content/images/areas/area-waste.jpg" class="img-fluid rounded area-img"
+                alt="Immagine in cui si vede una mano che raccoglie rifiuti dalla spiaggia">
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fine sezione Aree di Interesse con Tabs -->
+
+  <!-- Inizio sezione Aree di impatto -->
+  <section class="sustainability-pillars container text-start">
+    <h2>Le Nostre Aree di Impatto</h2>
+    <p>In AMD, l’innovazione si traduce in azione concreta. Le nostre attività si concentrano su sei aree strategiche
+      per
+      generare valore sostenibile, ambientale e sociale: dall’efficienza energetica all’inclusione, dalla governance
+      responsabile al volontariato globale.</p>
+    <div class="pillars-grid mt-5">
+      <div class="pillar">
+        <h3>Ambiente</h3>
+        <p>Riduzione emissioni Scope 1‑2 del 24,5% dal 2020 (target 50% entro 2030). 40% energia da fonti rinnovabili
+          nel 2023 contro il 18% del 2020.</p>
+      </div>
+      <div class="pillar">
+        <h3>Efficienza Energetica</h3>
+        <p>Obiettivo 30× efficienza chip HPC/AI entro il 2025 (attuale 13,5×). Design chiplet ha evitato ~132 000 t CO₂e
+          nel 2023.</p>
+      </div>
+      <div class="pillar">
+        <h3>Inclusione & STEM</h3>
+        <p>61 milioni di persone coinvolte in iniziative STEM (2021–2023). 56% dei dipendenti parte di gruppi inclusivi
+          (target 70%).</p>
+      </div>
+      <div class="pillar">
+        <h3>Volontariato Globale</h3>
+        <p>8ᵃ Global Day of Service in 17 paesi. AMD promuove una cultura attiva e responsabile nelle comunità locali.
+        </p>
+      </div>
+      <div class="pillar">
+        <h3>Supply Chain & Governance</h3>
+        <p>84% fornitori con obiettivi GHG (target 100% entro 2025). 71% usa energia rinnovabile. Audit RBA completati
+          in tutti i siti produttivi.</p>
+      </div>
+      <div class="pillar">
+        <h3>Innovazione Responsabile</h3>
+        <p>AMD punta a tecnologie ad alte prestazioni e basse emissioni, combinando avanzamento tecnologico e
+          responsabilità sociale.</p>
+      </div>
+    </div>
+  </section>
+ <!-- Fine sezione Aree di impatto -->
+
+
+ <!-- Inizio sezione Focus -->
+  <section id="focus" class="focus-section container">
+    <div class="focus-overlay"></div>
+    <div class="focus-content">
+      <h2>Una visione condivisa di sostenibilità</h2>
+      <p>In AMD crediamo che l’innovazione debba andare di pari passo con la responsabilità. Collaboriamo con
+        dipendenti, partner e comunità per costruire un futuro più efficiente, inclusivo e sostenibile. Ogni traguardo
+        raggiunto è il risultato di un impegno collettivo verso il cambiamento positivo.</p>
+    </div>
+  </section>
+ <!-- Fine sezione Focus -->
+
+  <!-- Inizio sezione Obiettivi -->
+  <section id="goals" class="goals-section">
+    <div class="container text-center mb-5">
+      <h2>Obiettivi di Sostenibilità</h2>
+      <p class="lead">I principali traguardi ambientali che AMD si impegna a raggiungere entro il 2030</p>
+    </div>
+    <!-- 3 box centrali -->
+    <div class="goals-stats d-flex flex-wrap justify-content-around text-center mb-5">
+      <div class="goal-box">
+        <h3>#1</h3>
+        <p>Supercomputer più efficiente</p>
+      </div>
+      <div class="goal-box">
+        <h3>50×</h3>
+        <p>Maggiore efficienza energetica</p>
+      </div>
+      <div class="goal-box">
+        <h3>30%</h3>
+        <p>Riduzione dei consumi</p>
+      </div>
+    </div>
+    <!-- div contenitore con testo a sx e grafico apexchart a dx -->
+    <div class="container goal-details">
+      <div class="row align-items-center">
+        <div class="col-md-6">
+          <h3>Un futuro sostenibile in numeri</h3>
+          <p>
+            AMD sta guidando l'innovazione tecnologica responsabile attraverso obiettivi concreti: efficienza
+            energetica, riduzione dei consumi e supercomputing sostenibile. Il grafico mostra l'evoluzione positiva
+            degli impegni ambientali dal 2021 al 2025.
+          </p>
+        </div>
+        <div class="col-md-6">
+          <div id="sustainabilityChart"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fine sezione Obiettivi -->
+
+  <!-- Inizio sezione Impatto Sociale -->
+  <section id="impatto-sociale" class="social-slider-custom">
+    <div class="container text-center mb-5">
+      <h2>Impatto Sociale</h2>
+    </div>
+
+    <!-- Slider glider -->
+    <div class="glider-contain position-relative">
+      <div class="progress-bar-left"><span class="progress-fill" id="progress-bar-fill"></span></div>
+      <ul class="slider-dots"></ul>
+      <div class="glider">
+        <div class="align-items-center position-relative card-box">
+          <div class="col-md-7 p-5">
+            <h3>Opportunità per tutti</h3>
+            <p class="mt-3">Promuoviamo un ambiente inclusivo dove tutti i dipendenti possano crescere e contribuire.
+              Scopri le iniziative di inclusione in AMD.</p>
+          </div>
+          <div class="col-md-5 p-0 h-100 img-slider-social-impact">
+            <img src="./content/images/social-impact/equal-opportunity.jpeg"
+              class="img-fluid rounded-end h-100 w-100 object-fit-cover"
+              alt="Mani riunite di un team per far capire il senso di uguaglianza e comunità">
+          </div>
+        </div>
+
+        <div class="align-items-center position-relative card-box">
+          <div class="col-md-7 p-5">
+            <h3>Diamo valore alle comunità</h3>
+            <p class="mt-3">Supportiamo progetti educativi, tecnologici e ambientali in tutto il mondo attraverso la
+              nostra fondazione e il volontariato aziendale.</p>
+          </div>
+          <div class="col-md-5 p-0 h-100 img-slider-social-impact">
+            <img src="./content/images/social-impact/volunteering.jpeg"
+              class="img-fluid rounded-end h-100 w-100 object-fit-cover"
+              alt="Persone che sono sedute a un tavolo in una riunione">
+          </div>
+        </div>
+
+        <div class="align-items-center position-relative card-box">
+          <div class="col-md-7 p-5">
+            <h3>Dove le persone realizzano il proprio potenziale</h3>
+            <p class="mt-3">AMD è stata premiata come uno dei migliori posti in cui lavorare. Oltre il 20% dei
+              dipendenti lavora in AMD da più di 10 anni.</p>
+          </div>
+          <div class="col-md-5 p-0 h-100 img-slider-social-impact">
+            <img src="./content/images/social-impact/best-job-place.jpeg"
+              class="img-fluid rounded-end h-100 w-100 object-fit-cover" alt="Persone felici che lavorano al pc">
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fine sezione Impatto Sociale -->
+
+  <!-- Inizio sezione Progressi -->
+  <section id="progress" class="progressi-section pt-5">
+    <div class="container text-center mb-5">
+      <h2>I nostri progressi</h2>
+    </div>
+    <!-- Timeline -->
+    <div class="timeline-wrapper">
+      <div class="timeline-line"></div>
+
+      <div class="timeline-item left" id="step-2020">
+        <div class="dot"></div>
+        <div class="content text-start">
+          <h3 class="color-orange-amd">2020 - Obiettivi ESG 2030</h3>
+          <p>Nel 2020 AMD ha lanciato gli obiettivi ESG per il prossimo decennio, puntando alla riduzione delle
+            emissioni globali, al rafforzamento dell'inclusione in azienda e alla promozione della responsabilità
+            ambientale attraverso tutte le linee operative. Sono state definite metriche misurabili a lungo termine.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item right" id="step-2023">
+        <div class="dot"></div>
+        <div class="content text-start">
+          <h3 class="color-orange-amd">2023 - Risultati Tangibili</h3>
+          <p>Nel 2023 AMD ha ridotto le emissioni Scope 1-2 del 24,5%, raggiunto il 40% di energia da fonti rinnovabili
+            e ha coinvolto oltre 61 milioni di persone in attività educative STEM a livello globale, supportando una
+            cultura dell'innovazione sostenibile.</p>
+        </div>
+      </div>
+
+      <div class="timeline-item left" id="step-2025">
+        <div class="dot"></div>
+        <div class="content text-start">
+          <h3 class="color-orange-amd">2025 - Traguardi Futuri</h3>
+          <p>AMD mira a raggiungere il 100% di audit RBA nei siti produttivi, superare il 70% di inclusione nel
+            personale globale e migliorare di 30 volte l'efficienza energetica dei chip HPC rispetto al 2020. L'azienda
+            punta a diventare un punto di riferimento nella sostenibilità tecnologica.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fine sezione Progressi -->
+
+
+  <!-- Inizio sezione Report -->
+  <section id="reporting" class="modern-reporting pt-5 pb-5">
+    <div class="container-fluid d-flex">
+      <!-- Sidebar Anni -->
+      <div class="years-nav">
+        <ul>
+          <li class="active" onclick="changeReport('2023-2024')">2023-2024</li>
+          <li onclick="changeReport('2022-2023')">2022-2023</li>
+          <li onclick="changeReport('2021-2022')">2021-2022</li>
+          <li onclick="changeReport('2020-2021')">2020-2021</li>
+        </ul>
+      </div>
+
+      <!-- Contenuto dinamico -->
+      <div class="report-content d-flex align-items-center">
+        <div class="report-image me-5 animate-fade">
+          <img id="report-img" src="./content/images/reporting/transformation-responsibility.jpeg"
+            class="img-fluid rounded shadow" alt="Report 2023-2024">
+        </div>
+        <div class="report-text animate-fade">
+          <div id="report-year" class="fs-1 fw-bold color-blue-amd">2023-2024</div>
+          <h2 id="report-title" class="mt-2 fw-semibold">Trasformazione e Responsabilità</h2>
+          <p id="report-desc" class="mt-3">AMD ha raggiunto traguardi significativi nel 2023-24, migliorando
+            l'efficienza energetica e l'inclusività globale. Scarica il report per scoprire tutti i dettagli.</p>
+          <a id="report-link" href="./content/documents/2023-24-global-cr-report-summary.pdf" target="_blank"
+            class="report-download mt-4">
+            <span>Visualizza Report</span>
+            <i class="fa-solid fa-arrow-right-long"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fine sezione Report -->
+
+  <!-- Inizio sezione riconoscimenti  -->
+  <section id="recognition" class="recognition-glider-section">
+    <div class="container text-center pt-5 pb-5">
+      <h2>Alcuni dei nostri Riconoscimenti</h2>
+      <p class="lead">L'impegno di AMD per una condotta responsabile è stato riconosciuto da numerose organizzazioni
+        indipendenti.</p>
+
+      <!-- Slider glider -->
+      <div class="glider-contain">
+        <div class="glider">
+          <div><img src="content/images/recognition/newsweek-americas-greenest-companies-2024.png" alt="Logo Newsweek"
+              class="recognition-logo"></div>
+          <div><img src="content/images/recognition/bloomberg-2020-equality-award.png" alt="Logo Bloomberg"
+              class="recognition-logo"></div>
+          <div><img src="content/images/recognition/ecovadis-gold-rating.png" alt="Logo Ecovadis"
+              class="recognition-logo"></div>
+          <div><img src="content/images/recognition/americas-most-just-companies-2025.png" alt="Logo JUST Companies"
+              class="recognition-logo"></div>
+          <div><img src="content/images/recognition/forbes-top-companies-women.png" alt="Logo Forbes Women"
+              class="recognition-logo"></div>
+          <div><img src="content/images/recognition/prime-corporate-responsibility.png" alt="Logo ESG Prime"
+              class="recognition-logo"></div>
+          <div><img src="content/images/recognition/msci-logo.png" alt="Logo MSCI ESG" class="recognition-logo"></div>
+          <div><img src="content/images/recognition/100-best-corporate-logo.png" alt="Logo Best Corporate Citizens"
+              class="recognition-logo"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <!-- Fine sezione riconoscimenti  -->
+
+  <!-- Inizio sezione footer  -->
+  <footer id="contatti" class="footer">
+    <!-- Copyright -->
+    <p class="p-0 mb-0">&copy; <span id="year"></span> Advanced Micro Devices, Inc. Pagina sviluppata per scopi
+      didattici.</p>
+    
+      <!-- Pulsante che riporta in alto -->
+    <button class="go-top" onclick="scrollToTop()" aria-label="Torna su">
+      <i class="fa-solid fa-chevron-up"></i>
+    </button>
+  </footer>
+  <!-- Fine sezione footer  -->
+
+<!-- 
+  Script JavaScript caricati alla fine del body per ottimizzare le performance.
+  In questo modo il browser può caricare e renderizzare prima il contenuto HTML/CSS,
+  evitando blocchi al rendering e garantendo che tutti gli elementi DOM siano disponibili
+  quando gli script verranno eseguiti.
+-->
+
+  <!-- Bootstrap JS -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+  <!-- ApexCharts cdn libreria utilizzata per la generazione del grafico dei progressi -->
+  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+  <!-- Glider libreria per lo slider -->
+  <script src="https://cdn.jsdelivr.net/npm/glider-js@1/glider.min.js"></script>
+  
+  <!-- Script con il nostro codice custom js -->
+  <script src="./content/js/script.js"></script>
+</body>
+
+</html>
